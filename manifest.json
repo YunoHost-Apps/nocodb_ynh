@@ -1,0 +1,56 @@
+{
+    "name": "NocoDB",
+    "id": "nocodb",
+    "packaging_format": 1,
+    "description": {
+        "en": "No-code platform that turns any database into a smart spreadsheet",
+        "fr": "Plateform sans code qui transforme toute base de données en un tableur intelligent."
+    },
+    "version": "0.9~ynh1",
+    "url": "https://www.nocodb.com/",
+    "upstream": {
+        "license": "AGPL-3.0-only",
+        "website": "https://www.nocodb.com/",
+        "demo": "https://www.nocodb.com/demos",
+        "code": "https://github.com/nocodb/nocodb"
+    },
+    "license": "AGPL-3.0-only",
+    "maintainer": {
+        "name": "tituspijean",
+        "email": "tituspijean@outlook.com"
+    },
+    "requirements": {
+        "yunohost": ">= 4.1.3"
+    },
+    "multi_instance": true,
+    "services": [
+        "nginx",
+        "php7.3-fpm",
+        "mysql"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "example": "example.com"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "example": "/nocodb",
+                "default": "/nocodb"
+            },
+            {
+                "name": "admin",
+                "type": "user",
+                "example": "johndoe"
+            },
+            {
+                "name": "is_public",
+                "type": "boolean",
+                "default": true
+            }
+        ]
+    }
+}
