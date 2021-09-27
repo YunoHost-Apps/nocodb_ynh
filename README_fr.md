@@ -11,7 +11,17 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 ## Vue d'ensemble
 
-Plateform sans code qui transforme toute base de données en un tableur intelligent.
+NocoDB is an open source NoCode platform that turns any database into a smart spreadsheet, alternative to Airtable.
+
+* Connect to new/existing SQL database and turn them into spreadsheet.
+* Create grid view, gallery view, kanban view and calendar view on top your data
+* Search, sort, filter columns and rows with ultra ease
+* Invite your team with fine grained Access Control
+* Share views publicly and also with password protection
+* Provides REST & GraphQL APIs with Swagger & GraphiQL GUI
+
+*(from NocoDB's website)*
+
 
 **Version incluse :** 0.9~ynh1
 
@@ -23,18 +33,9 @@ Plateform sans code qui transforme toute base de données en un tableur intellig
 
 ## Avertissements / informations importantes
 
-* Any known limitations, constrains or stuff not working, such as (but not limited to):
-    * requiring a full dedicated domain ?
-    * architectures not supported ?
-    * not-working single-sign on or LDAP integration ?
-    * the app requires an important amount of RAM / disk / .. to install or to work properly
-    * etc...
-
-* Other infos that people should be aware of, such as:
-    * any specific step to perform after installing (such as manually finishing the install, specific admin credentials, ...)
-    * how to configure / administrate the application if it ain't obvious
-    * upgrade process / specificities / things to be aware of ?
-    * security considerations ?
+NocoDB has its own authentication system which does not rely on YunoHost's SSO or LDAP server.
+  * You can make it public, especially if you need its API.
+  * You will need to create the first admin right after installation.
 
 ## Documentations et ressources
 
