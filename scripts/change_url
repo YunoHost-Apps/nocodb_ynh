@@ -21,6 +21,10 @@ new_path=$YNH_APP_NEW_PATH
 
 app=$YNH_APP_INSTANCE_NAME
 
+if [ $new_path != "/" ]; then
+    ynh_die --message="The app can only be installed at the root of a domain."
+fi
+
 #=================================================
 # LOAD SETTINGS
 #=================================================
@@ -28,11 +32,6 @@ ynh_script_progression --message="Loading installation settings..." --time --wei
 
 # Needed for helper "ynh_add_nginx_config"
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
-
-# Add settings here as needed by your application
-#db_name=$(ynh_app_setting_get --app=$app --key=db_name)
-#db_user=$db_name
-#db_pwd=$(ynh_app_setting_get --app=$app --key=db_pwd)
 
 #=================================================
 # BACKUP BEFORE CHANGE URL THEN ACTIVE TRAP

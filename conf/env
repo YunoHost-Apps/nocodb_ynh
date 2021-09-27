@@ -1,4 +1,5 @@
+NODE_ENV=production
 PORT=__PORT__
-NC_DB="mysql2://localhost:3306?u=__DB_USER__&p=__DB_PWD__&d=__DB_NAME__"
+NC_DB=mysql2://localhost:3306?u=__DB_USER__&p=__DB_PWD__&d=__DB_NAME__
 NC_AUTH_JWT_SECRET=__JWT_SECRET__
 NC_DISABLE_TELE=1

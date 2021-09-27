@@ -8,7 +8,8 @@ User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
 Environment="__YNH_NODE_LOAD_PATH__"
-ExecStart=__YNH_NPM__ start --production
+EnvironmentFile=__FINALPATH__/.env
+ExecStart=__YNH_NODE__ index.js
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
