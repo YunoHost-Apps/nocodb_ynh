@@ -90,6 +90,17 @@ ynh_mysql_setup_db --db_user=$db_user --db_name=$db_name --db_pwd=$db_pwd
 ynh_mysql_connect_as --user=$db_user --password=$db_pwd --database=$db_name < ./db.sql
 
 #=================================================
+# RESTORE VARIOUS FILES
+#=================================================
+ynh_script_progression --message="Restoring various files..." --weight=1
+
+log_path=/var/log/$app
+mkdir -p "$log_path"
+chmod 750 "$log_path"
+chmod -R o-rwx "$log_path"
+chown -R $app:www-data "$log_path"
+
+#=================================================
 # RESTORE SYSTEMD
 #=================================================
 ynh_script_progression --message="Restoring the systemd configuration..." --weight=1
