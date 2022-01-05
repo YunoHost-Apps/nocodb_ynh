@@ -6,7 +6,7 @@
         "en": "No-code platform that turns any database into a smart spreadsheet",
         "fr": "Plateform sans code qui transforme toute base de données en un tableur intelligent."
     },
-    "version": "0.84.1~ynh2",
+    "version": "0.84.1~ynh3",
     "url": "https://www.nocodb.com/",
     "upstream": {
         "license": "AGPL-3.0-only",
@@ -20,7 +20,7 @@
         "email": "tituspijean@outlook.com"
     },
     "requirements": {
-        "yunohost": ">= 4.1.7"
+        "yunohost": ">= 4.3"
     },
     "multi_instance": true,
     "services": [
