@@ -31,6 +31,12 @@ app=$YNH_APP_INSTANCE_NAME
 #=================================================
 ynh_script_progression --message="Validating installation parameters..." --weight=1
 
+# Stop if architecture is 32-bit ARM
+case $YNH_ARCH in
+    arm|armhf) ynh_die --message="Sorry, your architecture $YNH_ARCH is not supported by NocoDB. Aborting.";;
+    *)         ;;
+esac
+
 final_path=/opt/yunohost/$app
 test ! -e "$final_path" || ynh_die --message="This path already contains a folder"
 
