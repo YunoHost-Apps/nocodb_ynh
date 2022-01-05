@@ -107,6 +107,15 @@ ynh_script_progression --message="Upgrading NocoDB..." --weight=5
 
 ynh_use_nodejs
 pushd $final_path
+
+        if [ $YNH_ARCH = "arm64" ]; then
+                ynh_print_info --message="Retrieving and building OracleDB for ARM64..."
+		ynh_secure_remove oracledb
+                ynh_exec_warn_less ynh_exec_as $app git clone --recursive https://github.com/oracle/node-oracledb.git oracledb
+                ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH $ynh_npm install ./oracledb
+                ynh_print_info --message="...Done! Installing NocoDB now..."
+        fi
+
         ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH $ynh_npm install
 popd
 
