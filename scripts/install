@@ -125,6 +125,9 @@ pushd $final_path
 		ynh_print_info --message="...Done! Installing NocoDB now..."
 	fi
 
+	# https://github.com/Marak/colors.js/issues/285
+	ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH $ynh_npm install colors@1.4.0 --save-exact
+
 	ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH $ynh_npm install
 popd
 
