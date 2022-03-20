@@ -118,6 +118,9 @@ ynh_script_progression --message="Installing NocoDB..." --weight=5
 ynh_use_nodejs
 pushd $final_path
 
+	# Increase timeout for some users
+	ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH $ynh_npm set timeout=100000
+
 	if [ $YNH_ARCH = "arm64" ]; then
 		ynh_print_info --message="Retrieving and building OracleDB for ARM64..."
 		ynh_exec_warn_less ynh_exec_as $app git clone --recursive https://github.com/oracle/node-oracledb.git oracledb
