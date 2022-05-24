@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # NocoDB for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/nocodb.svg)](https://dash.yunohost.org/appci/app/nocodb) ![](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/nocodb.svg)](https://dash.yunohost.org/appci/app/nocodb) ![Working status](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)  
 [![Install NocoDB with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nocodb)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -27,13 +27,13 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 *(from NocoDB's website)*
 
 
-**Shipped version:** 0.90.11~ynh1
+**Shipped version:** 0.91.0~ynh1
 
 **Demo:** https://www.nocodb.com/demos
 
 ## Screenshots
 
-![](./doc/screenshots/example.png)
+![Screenshot of NocoDB](./doc/screenshots/example.png)
 
 ## Disclaimers / important information
 
@@ -43,20 +43,21 @@ NocoDB has its own authentication system which does not rely on YunoHost's SSO o
 
 ## Documentation and resources
 
-* Official app website: https://www.nocodb.com/
-* Upstream app code repository: https://github.com/nocodb/nocodb
-* YunoHost documentation for this app: https://yunohost.org/app_nocodb
-* Report a bug: https://github.com/YunoHost-Apps/nocodb_ynh/issues
+* Official app website: <https://www.nocodb.com/>
+* Upstream app code repository: <https://github.com/nocodb/nocodb>
+* YunoHost documentation for this app: <https://yunohost.org/app_nocodb>
+* Report a bug: <https://github.com/YunoHost-Apps/nocodb_ynh/issues>
 
 ## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
-```
+
+``` bash
 sudo yunohost app install https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing --debug
 or
 sudo yunohost app upgrade nocodb -u https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing --debug
 ```
 
-**More info regarding app packaging:** https://yunohost.org/packaging_apps
+**More info regarding app packaging:** <https://yunohost.org/packaging_apps>
