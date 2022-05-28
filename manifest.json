@@ -6,7 +6,7 @@
         "en": "No-code platform that turns any database into a smart spreadsheet",
         "fr": "Plateform sans code qui transforme toute base de données en un tableur intelligent."
     },
-    "version": "0.90.11~ynh1",
+    "version": "0.91.1~ynh1",
     "url": "https://www.nocodb.com/",
     "upstream": {
         "license": "AGPL-3.0-only",
