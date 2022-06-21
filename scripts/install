@@ -13,6 +13,9 @@ source /usr/share/yunohost/helpers
 # MANAGE SCRIPT FAILURE
 #=================================================
 
+ynh_clean_setup () {
+	ynh_clean_check_starting
+}
 # Exit if an error occurs during the execution of the script
 ynh_abort_if_errors
 
@@ -21,10 +24,12 @@ ynh_abort_if_errors
 #=================================================
 
 domain=$YNH_APP_ARG_DOMAIN
-path_url="/" #$YNH_APP_ARG_PATH
+path_url="/"
 is_public=$YNH_APP_ARG_IS_PUBLIC
 
 app=$YNH_APP_INSTANCE_NAME
+
+jwt_secret=$(ynh_string_random --length=20)
 
 #=================================================
 # CHECK IF THE APP CAN BE INSTALLED WITH THESE ARGS
@@ -50,6 +55,7 @@ ynh_script_progression --message="Storing installation settings..." --weight=1
 
 ynh_app_setting_set --app=$app --key=domain --value=$domain
 ynh_app_setting_set --app=$app --key=path --value=$path_url
+ynh_app_setting_set --app=$app --key=jwt_secret --value=$jwt_secret
 
 #=================================================
 # STANDARD MODIFICATIONS
@@ -117,7 +123,6 @@ ynh_script_progression --message="Installing NocoDB..." --weight=5
 
 ynh_use_nodejs
 pushd $final_path
-
 	if [ $YNH_ARCH = "arm64" ]; then
 		ynh_print_info --message="Retrieving and building OracleDB for ARM64..."
 		ynh_exec_warn_less ynh_exec_as $app git clone --recursive https://github.com/oracle/node-oracledb.git oracledb
@@ -135,9 +140,6 @@ popd
 # ADD A CONFIGURATION
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
-
-jwt_secret=$(ynh_string_random --length=20)
-ynh_app_setting_set --app=$app --key=jwt_secret --value=$jwt_secret
 
 ynh_add_config --template="env" --destination="$final_path/.env"
 
