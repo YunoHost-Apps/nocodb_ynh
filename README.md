@@ -43,7 +43,7 @@ NocoDB has its own authentication system which does not rely on YunoHost's SSO o
 
 ## Documentation and resources
 
-* Official app website: <https://www.nocodb.com/>
+* Official app website: <https://www.nocodb.com>
 * Upstream app code repository: <https://github.com/nocodb/nocodb>
 * YunoHost documentation for this app: <https://yunohost.org/app_nocodb>
 * Report a bug: <https://github.com/YunoHost-Apps/nocodb_ynh/issues>
