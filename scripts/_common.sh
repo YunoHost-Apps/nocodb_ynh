@@ -4,6 +4,7 @@
 # COMMON VARIABLES
 #=================================================
 
+# dependencies used by the app
 nodejs_version=16
 
 #=================================================

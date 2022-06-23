@@ -7,10 +7,10 @@
         "fr": "Plateform sans code qui transforme toute base de données en un tableur intelligent."
     },
     "version": "0.90.11~ynh1",
-    "url": "https://www.nocodb.com/",
+    "url": "https://www.nocodb.com",
     "upstream": {
         "license": "AGPL-3.0-only",
-        "website": "https://www.nocodb.com/",
+        "website": "https://www.nocodb.com",
         "demo": "https://www.nocodb.com/demos",
         "code": "https://github.com/nocodb/nocodb"
     },
@@ -20,9 +20,9 @@
         "email": "tituspijean@outlook.com"
     },
     "requirements": {
-        "yunohost": ">= 4.3"
+        "yunohost": ">= 4.3.0"
     },
-    "multi_instance": true,
+    "multi_instance": false,
     "services": [
         "nginx",
         "php7.3-fpm",
