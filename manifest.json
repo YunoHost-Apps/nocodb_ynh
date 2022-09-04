@@ -12,7 +12,8 @@
         "license": "AGPL-3.0-only",
         "website": "https://www.nocodb.com",
         "demo": "https://www.nocodb.com/demos",
-        "code": "https://github.com/nocodb/nocodb"
+        "code": "https://github.com/nocodb/nocodb",
+        "cpe": "cpe:2.3:a:xgenecloud:nocodb"
     },
     "license": "AGPL-3.0-only",
     "maintainer": {
