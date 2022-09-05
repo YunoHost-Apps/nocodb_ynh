@@ -6,13 +6,14 @@
         "en": "No-code platform that turns any database into a smart spreadsheet",
         "fr": "Plateform sans code qui transforme toute base de données en un tableur intelligent."
     },
-    "version": "0.92.3~ynh1",
+    "version": "0.92.4~ynh1",
     "url": "https://www.nocodb.com",
     "upstream": {
         "license": "AGPL-3.0-only",
         "website": "https://www.nocodb.com",
         "demo": "https://www.nocodb.com/demos",
-        "code": "https://github.com/nocodb/nocodb"
+        "code": "https://github.com/nocodb/nocodb",
+        "cpe": "cpe:2.3:a:xgenecloud:nocodb"
     },
     "license": "AGPL-3.0-only",
     "maintainer": {
