@@ -27,8 +27,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 *(from NocoDB's website)*
 
 
-**Shipped version:** 0.92.4~ynh1
-
+**Shipped version:** 0.98.1~ynh1
 
 **Demo:** https://www.nocodb.com/demos
 
