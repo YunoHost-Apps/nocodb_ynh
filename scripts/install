@@ -126,14 +126,11 @@ pushd $final_path
 	if [ $YNH_ARCH = "arm64" ]; then
 		ynh_print_info --message="Retrieving and building OracleDB for ARM64..."
 		ynh_exec_warn_less ynh_exec_as $app git clone --recursive https://github.com/oracle/node-oracledb.git oracledb
-		ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH $ynh_npm install ./oracledb
+		ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH NODE_ENV="production" $ynh_npm install ./oracledb
 		ynh_print_info --message="...Done! Installing NocoDB now..."
 	fi
 
-	# https://github.com/Marak/colors.js/issues/285
-	ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH $ynh_npm install colors@1.4.0 --save-exact
-
-	ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH $ynh_npm install
+	ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH NODE_ENV="production" $ynh_npm install --force
 popd
 
 #=================================================
