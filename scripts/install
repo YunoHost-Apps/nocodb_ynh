@@ -152,7 +152,7 @@ chown $app:$app "$final_path/.env"
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
 
 if [ $YNH_ARCH == "arm64" ] || [ $YNH_ARCH == "amd64" ]; then
-    nocodb_startcommand="nocodb"
+    nocodb_startcommand="$final_path/nocodb"
 else
     nocodb_startcommand="$ynh_node index.js"
 fi
