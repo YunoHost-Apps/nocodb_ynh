@@ -113,6 +113,7 @@ ynh_add_nginx_config
 #=================================================
 # PERFORMING NOCODB UPGRADE
 #=================================================
+if [ $YNH_ARCH != "arm64" || $YNH_ARCH != "amd64" ]; then
 ynh_script_progression --message="Upgrading NocoDB..." --weight=5
 
 ynh_use_nodejs
@@ -128,6 +129,7 @@ pushd $final_path
 
         ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH NODE_ENV="production" $ynh_npm install --force
 popd
+fi
 
 #=================================================
 # SETUP SYSTEMD
