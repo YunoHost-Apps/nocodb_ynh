@@ -113,7 +113,7 @@ ynh_add_nginx_config
 #=================================================
 # PERFORMING NOCODB UPGRADE
 #=================================================
-if [ $YNH_ARCH != "arm64" || $YNH_ARCH != "amd64" ]; then
+if [ $YNH_ARCH != "arm64" ] || [ $YNH_ARCH != "amd64" ]; then
 ynh_script_progression --message="Upgrading NocoDB..." --weight=5
 
 ynh_use_nodejs
@@ -136,7 +136,7 @@ fi
 #=================================================
 ynh_script_progression --message="Upgrading systemd configuration..." --weight=1
 
-if [ $YNH_ARCH == "arm64" || $YNH_ARCH == "amd64" ]; then
+if [ $YNH_ARCH == "arm64" ] || [ $YNH_ARCH == "amd64" ]; then
     nocodb_startcommand="nocodb"
 else
     nocodb_startcommand="$ynh_node index.js"
