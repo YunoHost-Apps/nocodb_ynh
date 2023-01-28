@@ -119,7 +119,7 @@ pushd $final_path
         fi
 
         ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH NODE_ENV="production" $ynh_npm uninstall nocodb
-        ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH NODE_ENV="production" $ynh_npm install --save nocodb@$YNH_APP_MANIFEST_VERSION
+        ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH NODE_ENV="production" $ynh_npm install --save nocodb@$(ynh_app_upstream_version)
 popd
 
 #=================================================
