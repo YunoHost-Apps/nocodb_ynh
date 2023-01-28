@@ -22,6 +22,14 @@ final_path=$(ynh_app_setting_get --app=$app --key=final_path)
 db_name=$(ynh_app_setting_get --app=$app --key=db_name)
 port=$(ynh_app_setting_get --app=$app --key=port)
 
+# Stop if architecture is 32-bit ARM, else point to the ARM64 or AMD64 binaries, else to the source code to be downloaded
+case $YNH_ARCH in
+    arm|armhf) ynh_die --message="Sorry, your architecture $YNH_ARCH is not supported by NocoDB. Aborting.";;
+    arm64)     src="arm64";;
+    amd64)     src="amd64";;
+    *)         src="app";;
+esac
+
 #=================================================
 # CHECK VERSION
 #=================================================
@@ -75,7 +83,7 @@ then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
 	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$final_path" --keep=".env"
+	ynh_setup_source --source="$src" --dest_dir="$final_path" --keep=".env"
 fi
 
 chmod 750 "$final_path"
@@ -125,6 +133,13 @@ popd
 # SETUP SYSTEMD
 #=================================================
 ynh_script_progression --message="Upgrading systemd configuration..." --weight=1
+
+if [ $YNH_ARCH = "arm64" || $YNH_ARCH = "amd64" ];
+    nocodb_startcommand="nocodb"
+else
+    nocodb_startcommand="$ynh_node index.js"
+fi
+ynh_app_setting_set --app=$app --key=nocodb_startcommand --value=$nocodb_startcommand
 
 # Create a dedicated systemd config
 ynh_add_systemd_config
