@@ -126,7 +126,7 @@ ynh_script_progression --message="Installing NocoDB..." --weight=5
 
 ynh_use_nodejs
 pushd $final_path
-	if [ $YNH_ARCH = "arm64" ]; then
+	if [ $YNH_ARCH == "arm64" ]; then
 		ynh_print_info --message="Retrieving and building OracleDB for ARM64..."
 		ynh_exec_warn_less ynh_exec_as $app git clone --recursive https://github.com/oracle/node-oracledb.git oracledb
 		ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH NODE_ENV="production" $ynh_npm install ./oracledb
@@ -151,7 +151,7 @@ chown $app:$app "$final_path/.env"
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
 
-if [ $YNH_ARCH = "arm64" || $YNH_ARCH = "amd64" ]; then
+if [ $YNH_ARCH == "arm64" || $YNH_ARCH == "amd64" ]; then
     nocodb_startcommand="nocodb"
 else
     nocodb_startcommand="$ynh_node index.js"

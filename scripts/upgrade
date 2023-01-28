@@ -119,7 +119,7 @@ ynh_script_progression --message="Upgrading NocoDB..." --weight=5
 ynh_use_nodejs
 pushd $final_path
 
-        if [ $YNH_ARCH = "arm64" ]; then
+        if [ $YNH_ARCH == "arm64" ]; then
                 ynh_print_info --message="Retrieving and building OracleDB for ARM64..."
 		ynh_secure_remove oracledb
                 ynh_exec_warn_less ynh_exec_as $app git clone --recursive https://github.com/oracle/node-oracledb.git oracledb
@@ -136,7 +136,7 @@ fi
 #=================================================
 ynh_script_progression --message="Upgrading systemd configuration..." --weight=1
 
-if [ $YNH_ARCH = "arm64" || $YNH_ARCH = "amd64" ]; then
+if [ $YNH_ARCH == "arm64" || $YNH_ARCH == "amd64" ]; then
     nocodb_startcommand="nocodb"
 else
     nocodb_startcommand="$ynh_node index.js"
