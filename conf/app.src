@@ -1,4 +1,4 @@
-SOURCE_URL=https://codeload.github.com/nocodb/nocodb-seed/zip/refs/heads/main.zip
+SOURCE_URL=https://codeload.github.com/nocodb/nocodb-seed/zip/refs/heads/main
 SOURCE_SUM=0321F7112D9D0784D29AAEE2B8522E46276284A7E01082E578C3FD529072F2BB
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=zip
