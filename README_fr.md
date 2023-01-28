@@ -5,15 +5,15 @@ It shall NOT be edited by hand.
 
 # NocoDB pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/nocodb.svg)](https://dash.yunohost.org/appci/app/nocodb) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/nocodb.svg)](https://dash.yunohost.org/appci/app/nocodb) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)
 [![Installer NocoDB avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nocodb)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer NocoDB rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer NocoDB rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 NocoDB is an open source NoCode platform that turns any database into a smart spreadsheet, alternative to Airtable.
 
@@ -31,9 +31,9 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 
 **Démo :** https://www.nocodb.com/demos
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de NocoDB](./doc/screenshots/example.png)
+![Capture d’écran de NocoDB](./doc/screenshots/example.png)
 
 ## Avertissements / informations importantes
 
@@ -43,8 +43,8 @@ NocoDB has its own authentication system which does not rely on YunoHost's SSO o
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://www.nocodb.com>
-* Dépôt de code officiel de l'app : <https://github.com/nocodb/nocodb>
+* Site officiel de l’app : <https://www.nocodb.com>
+* Dépôt de code officiel de l’app : <https://github.com/nocodb/nocodb>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_nocodb>
 * Signaler un bug : <https://github.com/YunoHost-Apps/nocodb_ynh/issues>
 
@@ -60,4 +60,4 @@ ou
 sudo yunohost app upgrade nocodb -u https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
