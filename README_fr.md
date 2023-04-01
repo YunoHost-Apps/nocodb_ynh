@@ -6,6 +6,7 @@ It shall NOT be edited by hand.
 # NocoDB pour YunoHost
 
 [![Niveau d’intégration](https://dash.yunohost.org/integration/nocodb.svg)](https://dash.yunohost.org/appci/app/nocodb) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)
+
 [![Installer NocoDB avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nocodb)
 
 *[Read this readme in english.](./README.md)*
