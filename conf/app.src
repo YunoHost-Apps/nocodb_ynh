@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/nocodb/nocodb-seed/archive/a86e60ee5ffde3c189a921676c68f444d1801f4d.zip
-SOURCE_SUM=5d3731dad8228f575d62698e0cd2cf03e3e5cf205f6ab92c9cc93ef98560baaf
+SOURCE_URL=https://github.com/nocodb/nocodb-seed/archive/a7e0b96a51ce0889892bd6e24db779e533afe0fc.zip
+SOURCE_SUM=6ce8caa823d00c4516fcde34b571112f821c51ed1784fca78c81a3075ad48ac8
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=zip
 SOURCE_EXTRACT=true
