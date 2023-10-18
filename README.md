@@ -28,7 +28,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 *(from NocoDB's website)*
 
 
-**Shipped version:** 0.111.4~ynh1
+**Shipped version:** 0.202.4~ynh1
 
 **Demo:** https://www.nocodb.com/demos
 
@@ -46,7 +46,6 @@ NocoDB has its own authentication system which does not rely on YunoHost's SSO o
 
 * Official app website: <https://www.nocodb.com>
 * Upstream app code repository: <https://github.com/nocodb/nocodb>
-* YunoHost documentation for this app: <https://yunohost.org/app_nocodb>
 * Report a bug: <https://github.com/YunoHost-Apps/nocodb_ynh/issues>
 
 ## Developer info
