@@ -9,7 +9,7 @@ Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
 Environment="__YNH_NODE_LOAD_PATH__"
 EnvironmentFile=__INSTALL_DIR__/.env
-ExecStart=__YNH_NODE__ index.js
+ExecStart=__YNH_NODE__ __INSTALL_DIR__/nocodb
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
