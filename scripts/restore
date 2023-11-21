@@ -19,6 +19,7 @@ ynh_restore_file --origin_path="$install_dir"
 
 chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
+chmod +x $install_dir/nocodb
 
 #=================================================
 # RESTORE THE MYSQL DATABASE
