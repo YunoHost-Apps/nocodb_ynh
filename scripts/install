@@ -54,7 +54,7 @@ ynh_add_systemd_config
 # Use logrotate to manage application logfile(s)
 ynh_use_logrotate
 
-yunohost service add $app --description="$app daemon, turns any database into a smart-spreadsheet" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="Turns any database into a smart-spreadsheet" --log="/var/log/$app/$app.log"
 
 #=================================================
 # SPECIFIC SETUP

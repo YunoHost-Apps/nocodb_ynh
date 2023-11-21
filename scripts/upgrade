@@ -44,7 +44,7 @@ chown -R $app:www-data "$install_dir"
 #=================================================
 ynh_script_progression --message="Upgrading dependencies..." --weight=1
 
-ynh_install_nodejs --nodejs_version=$new_nodejs_version
+ynh_install_nodejs --nodejs_version=$nodejs_version
 
 #=================================================
 # NGINX CONFIGURATION
@@ -60,7 +60,7 @@ ynh_add_systemd_config
 # Use logrotate to manage app-specific logfile(s)
 ynh_use_logrotate --non-append
 
-yunohost service add $app --description="$app daemon, turns any database into a smart-spreadsheet" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="Turns any database into a smart-spreadsheet" --log="/var/log/$app/$app.log"
 
 #=================================================
 # SPECIFIC UPGRADE

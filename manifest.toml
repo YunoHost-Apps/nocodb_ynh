@@ -3,7 +3,7 @@ packaging_format = 2
 id = "nocodb"
 name = "NocoDB"
 description.en = "No-code platform that turns any database into a smart spreadsheet"
-description.fr = "Plateform sans code qui transforme toute base de données en un tableur intelligent."
+description.fr = "Plateform sans code qui transforme toute base de données en un tableur intelligent"
 
 version = "0.202.4~ynh1"
 
@@ -40,8 +40,10 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/nocodb/nocodb-seed/archive/c46e588bf143b04e519fec6e973a3da8fa260ace.zip"
-        sha256 = "7f05ec8cf27c58fcac6c257f3d2e3ea209c663613b7240c12b12e59ed8d6b310"
+        url = "https://github.com/nocodb/nocodb-seed/archive/bb1686f4c4723042b176e98a6660738a99af495b.zip"
+        sha256 = "34a0e84757a442d26a93a3cb22249fb860296d7a0d11eadfc642aae55de03f9d"
+        autoupdate.upstream = "https://github.com/nocodb/nocodb-seed"
+        autoupdate.strategy = "latest_github_commit"
 
 
     [resources.system_user]
