@@ -41,13 +41,6 @@ chown -R $app:www-data "$install_dir"
 chmod +x $install_dir/nocodb
 
 #=================================================
-# UPGRADE DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Upgrading dependencies..." --weight=1
-
-ynh_install_nodejs --nodejs_version=$nodejs_version
-
-#=================================================
 # NGINX CONFIGURATION
 #=================================================
 ynh_script_progression --message="Upgrading NGINX web server configuration..." --weight=1

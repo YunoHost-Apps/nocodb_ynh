@@ -29,13 +29,6 @@ ynh_script_progression --message="Restoring the MySQL database..." --weight=2
 ynh_mysql_connect_as --user=$db_user --password=$db_pwd --database=$db_name < ./db.sql
 
 #=================================================
-# REINSTALL DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Reinstalling dependencies..." --weight=2
-
-ynh_install_nodejs --nodejs_version=$nodejs_version
-
-#=================================================
 # RESTORE THE NGINX CONFIGURATION
 #=================================================
 ynh_script_progression --message="Restoring the NGINX configuration..." --weight=1
