@@ -9,7 +9,7 @@ Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
 Environment="__YNH_NODE_LOAD_PATH__"
 EnvironmentFile=__INSTALL_DIR__/.env
-ExecStart=__YNH_NODE__ __INSTALL_DIR__/nocodb
+ExecStart=__INSTALL_DIR__/nocodb
 
 # Sandboxing options to harden security
 # Details for these options: https://www.freedesktop.org/software/systemd/man/systemd.exec.html
