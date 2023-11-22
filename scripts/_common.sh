@@ -5,7 +5,7 @@
 #=================================================
 
 # dependencies used by the app
-nodejs_version=18
+nodejs_version=20
 
 #=================================================
 # PERSONAL HELPERS
