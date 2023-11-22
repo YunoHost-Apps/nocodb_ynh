@@ -22,7 +22,7 @@ upgrade_type=$(ynh_check_app_version_changed)
 #=================================================
 ynh_script_progression --message="Stopping a systemd service..." --weight=1
 
-ynh_systemd_action --service_name=$app --action="stop" --log_path="/var/log/$app/$app.log"
+ynh_systemd_action --service_name=$app --action="stop" --log_path="systemd"
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -64,32 +64,11 @@ ynh_use_logrotate --non-append
 yunohost service add $app --description="Turns any database into a smart-spreadsheet" --log="/var/log/$app/$app.log"
 
 #=================================================
-# SPECIFIC UPGRADE
-#=================================================
-# PERFORMING NOCODB UPGRADE
-#=================================================
-ynh_script_progression --message="Upgrading NocoDB..." --weight=5
-
-ynh_use_nodejs
-pushd $install_dir
-
-        if [ $YNH_ARCH = "arm64" ]; then
-                ynh_print_info --message="Retrieving and building OracleDB for ARM64..."
-		ynh_secure_remove oracledb
-                ynh_exec_warn_less ynh_exec_as $app git clone --recursive https://github.com/oracle/node-oracledb.git oracledb
-                ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH NODE_ENV="production" $ynh_npm install ./oracledb
-        fi
-
-        ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH NODE_ENV="production" $ynh_npm uninstall nocodb
-        ynh_exec_warn_less ynh_exec_as $app $ynh_node_load_PATH NODE_ENV="production" $ynh_npm install --save nocodb@$(ynh_app_upstream_version)
-popd
-
-#=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --weight=1
 
-ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log" --line_match="application successfully started"
+ynh_systemd_action --service_name=$app --action="start" --log_path="systemd" --line_match="application successfully started"
 
 #=================================================
 # END OF SCRIPT
