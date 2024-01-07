@@ -1,1 +1,1 @@
-You now need to create the first admin user for __APP__. (FIXME: how...?)
+You now need to [open __APP__](https://__DOMAIN____PATH__) and create the first admin user.
