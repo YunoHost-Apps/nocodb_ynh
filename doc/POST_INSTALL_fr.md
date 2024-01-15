@@ -1,0 +1,1 @@
+Vous pouvez maintenant ouvrir [__APP__](https://__DOMAIN____PATH__) et créer le premier utilisateur administrateur.
