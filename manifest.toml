@@ -7,7 +7,7 @@ name = "NocoDB"
 description.en = "No-code platform that turns any database into a smart spreadsheet"
 description.fr = "Plateform sans code qui transforme toute base de données en un tableur intelligent"
 
-version = "0.203.2~ynh1"
+version = "0.203.2~ynh2"
 
 maintainers = ["tituspijean"]
 
