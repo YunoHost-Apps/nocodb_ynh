@@ -10,19 +10,13 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# CHECK VERSION
-#=================================================
-
-upgrade_type=$(ynh_check_app_version_changed)
-
-#=================================================
 # STANDARD UPGRADE STEPS
 #=================================================
 # STOP SYSTEMD SERVICE
 #=================================================
 ynh_script_progression --message="Stopping a systemd service..." --weight=1
 
-ynh_systemd_action --service_name=$app --action="stop" --log_path="systemd"
+ynh_systemd_action --service_name="$app" --action="stop" --log_path="systemd"
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -30,34 +24,33 @@ ynh_systemd_action --service_name=$app --action="stop" --log_path="systemd"
 ynh_script_progression --message="Upgrading source files..." --weight=1
 
 # Download, check integrity, uncompress and patch the source from app.src
-ynh_setup_source --dest_dir="$install_dir" --keep=".env nc" --full_replace
+ynh_setup_source --dest_dir="$install_dir" --full_replace=1 --keep=".env nc"
 
 chmod -R o-rwx "$install_dir"
-chown -R $app:$app "$install_dir"
-chmod +x $install_dir/nocodb
+chown -R "$app:$app" "$install_dir"
+chmod +x "$install_dir/nocodb"
 
 #=================================================
-# NGINX CONFIGURATION
+# REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
-ynh_script_progression --message="Upgrading NGINX web server configuration..." --weight=1
+ynh_script_progression --message="Upgrading system configurations related to $app..." --weight=1
 
 # Create a dedicated NGINX config
 ynh_add_nginx_config
 
 # Create a dedicated systemd config
 ynh_add_systemd_config
+yunohost service add "$app" --description="Turns any database into a smart-spreadsheet" --log="/var/log/$app/$app.log"
 
 # Use logrotate to manage app-specific logfile(s)
 ynh_use_logrotate --non-append
-
-yunohost service add $app --description="Turns any database into a smart-spreadsheet" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --weight=1
 
-ynh_systemd_action --service_name=$app --action="start" --log_path="systemd" --line_match="application successfully started"
+ynh_systemd_action --service_name="$app" --action="start" --log_path="systemd" --line_match="application successfully started"
 
 #=================================================
 # END OF SCRIPT
