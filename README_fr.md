@@ -16,31 +16,22 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-NocoDB is an open source NoCode platform that turns any database into a smart spreadsheet, alternative to Airtable.
+NocoDB est une plateforme NoCode open source qui transforme n'importe quelle base de données en une feuille de calcul intelligente, alternative à Airtable.
 
-* Connect to new/existing SQL database and turn them into spreadsheet.
-* Create grid view, gallery view, kanban view and calendar view on top your data
-* Search, sort, filter columns and rows with ultra ease
-* Invite your team with fine grained Access Control
-* Share views publicly and also with password protection
-* Provides REST & GraphQL APIs with Swagger & GraphiQL GUI
+* Connectez-vous à une base de données SQL nouvelle/existante et transformez-la en feuille de calcul
+* Créez une vue grille, une vue galerie, une vue kanban et une vue calendrier au-dessus de vos données
+* Rechercher, trier, filtrer les colonnes et les lignes en toute simplicité
+* Invitez votre équipe avec un contrôle d'accès précis
+* Partagez vos vues publiquement et également avec une protection par mot de passe
+* Fournit des API REST et GraphQL avec l'interface graphique Swagger et GraphiQL
 
-*(from NocoDB's website)*
-
-
-**Version incluse :** 0.202.9~ynh1
+**Version incluse :** 0.203.2~ynh1
 
 **Démo :** https://www.nocodb.com/demos
 
 ## Captures d’écran
 
-![Capture d’écran de NocoDB](./doc/screenshots/example.png)
-
-## Avertissements / informations importantes
-
-NocoDB has its own authentication system which does not rely on YunoHost's SSO or LDAP server.
-  * You can make it public, especially if you need its API.
-  * You will need to create the first admin right after installation.
+![Capture d’écran de NocoDB](./doc/screenshots/screenshot.png)
 
 ## Documentations et ressources
 
