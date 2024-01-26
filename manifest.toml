@@ -1,0 +1,72 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "nocodb"
+name = "NocoDB"
+description.en = "No-code platform that turns any database into a smart spreadsheet"
+description.fr = "Plateform sans code qui transforme toute base de données en un tableur intelligent"
+
+version = "0.203.2~ynh1"
+
+maintainers = ["tituspijean"]
+
+[upstream]
+license = "AGPL-3.0-only"
+website = "https://www.nocodb.com"
+demo = "https://www.nocodb.com/demos"
+code = "https://github.com/nocodb/nocodb"
+
+[integration]
+yunohost = ">= 11.2"
+architectures = ["amd64", "arm64"]
+multi_instance = false
+
+ldap = false
+
+sso = false
+
+disk = "50M"
+ram.build = "450M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.init_main_permission]
+    help.en = "The app has its own user login system, so you can disable YunoHost's SSO, especially if you use NocoDB's API."
+    help.fr = "L'application a son propre système d'authentification, vous pouvez donc désactiver le SSO de YunoHost, particulièrement si vous utilisez l'API de NocoDB."
+    type = "group"
+    default = "visitors"
+
+[resources]
+    [resources.sources.main]
+    amd64.url = "https://github.com/nocodb/nocodb/releases/download/0.203.2/Noco-linux-x64"
+    amd64.sha256 = "dae67f74461dd55ff1f09a48a6f7cddeb2ce52fd56fa4fa377afb6f90943298a"
+    arm64.url = "https://github.com/nocodb/nocodb/releases/download/0.203.2/Noco-linux-arm64"
+    arm64.sha256 = "8545dc5d03c530dfc1a15ece70b2473b653e003722c255b30b5595affea4b092"
+    rename = "nocodb"
+    extract = false
+
+    autoupdate.strategy = "latest_github_release"
+    autoupdate.asset.amd64 = "Noco-linux-x64"
+    autoupdate.asset.arm64 = "Noco-linux-arm64"
+
+    [resources.system_user]
+    allow_email = true
+
+    [resources.install_dir]
+
+    [resources.ports]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.apt]
+    packages = [
+        "mariadb-server",
+    ]
+
+    [resources.database]
+    type = "mysql"
