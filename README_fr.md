@@ -24,10 +24,9 @@ NocoDB est une plateforme NoCode open source qui transforme n'importe quelle bas
 * Invitez votre équipe avec un contrôle d'accès précis
 * Partagez vos vues publiquement et également avec une protection par mot de passe
 * Fournit des API REST et GraphQL avec l'interface graphique Swagger et GraphiQL
+**Version incluse :** 0.204.5~ynh1
 
-**Version incluse :** 0.204.4~ynh1
-
-**Démo :** https://www.nocodb.com/demos
+**Démo :** <https://www.nocodb.com/demos>
 
 ## Captures d’écran
 
@@ -35,10 +34,10 @@ NocoDB est une plateforme NoCode open source qui transforme n'importe quelle bas
 
 ## Documentations et ressources
 
-* Site officiel de l’app : <https://www.nocodb.com>
-* Dépôt de code officiel de l’app : <https://github.com/nocodb/nocodb>
-* YunoHost Store: <https://apps.yunohost.org/app/nocodb>
-* Signaler un bug : <https://github.com/YunoHost-Apps/nocodb_ynh/issues>
+- Site officiel de l’app : <https://www.nocodb.com>
+- Dépôt de code officiel de l’app : <https://github.com/nocodb/nocodb>
+- YunoHost Store : <https://apps.yunohost.org/app/nocodb>
+- Signaler un bug : <https://github.com/YunoHost-Apps/nocodb_ynh/issues>
 
 ## Informations pour les développeurs
 
@@ -46,7 +45,7 @@ Merci de faire vos pull request sur la [branche testing](https://github.com/Yuno
 
 Pour essayer la branche testing, procédez comme suit.
 
-``` bash
+```bash
 sudo yunohost app install https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing --debug
 ou
 sudo yunohost app upgrade nocodb -u https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing --debug
