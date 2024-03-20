@@ -25,10 +25,9 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 * Share views publicly and also with password protection
 * Provides REST & GraphQL APIs with Swagger & GraphiQL GUI
 
+**Shipped version:** 0.204.7~ynh1
 
-**Shipped version:** 0.204.4~ynh1
-
-**Demo:** https://www.nocodb.com/demos
+**Demo:** <https://www.nocodb.com/demos>
 
 ## Screenshots
 
@@ -36,10 +35,10 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 
 ## Documentation and resources
 
-* Official app website: <https://www.nocodb.com>
-* Upstream app code repository: <https://github.com/nocodb/nocodb>
-* YunoHost Store: <https://apps.yunohost.org/app/nocodb>
-* Report a bug: <https://github.com/YunoHost-Apps/nocodb_ynh/issues>
+- Official app website: <https://www.nocodb.com>
+- Upstream app code repository: <https://github.com/nocodb/nocodb>
+- YunoHost Store: <https://apps.yunohost.org/app/nocodb>
+- Report a bug: <https://github.com/YunoHost-Apps/nocodb_ynh/issues>
 
 ## Developer info
 
@@ -47,7 +46,7 @@ Please send your pull request to the [testing branch](https://github.com/YunoHos
 
 To try the testing branch, please proceed like that.
 
-``` bash
+```bash
 sudo yunohost app install https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing --debug
 or
 sudo yunohost app upgrade nocodb -u https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing --debug
