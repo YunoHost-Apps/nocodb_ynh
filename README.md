@@ -9,7 +9,7 @@ It shall NOT be edited by hand.
 
 [![Install NocoDB with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nocodb)
 
-*[Lire ce readme en français.](./README_fr.md)*
+*[Read this README is other languages.](./ALL_README.md)*
 
 > *This package allows you to install NocoDB quickly and simply on a YunoHost server.
 If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/install) to learn how to install it.*
@@ -25,7 +25,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 * Share views publicly and also with password protection
 * Provides REST & GraphQL APIs with Swagger & GraphiQL GUI
 
-**Shipped version:** 0.204.7~ynh1
+**Shipped version:** 0.204.9~ynh1
 
 **Demo:** <https://www.nocodb.com/demos>
 
@@ -42,7 +42,8 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 
 ## Developer info
 
-Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing).
+Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing),
+
 
 To try the testing branch, please proceed like that.
 
