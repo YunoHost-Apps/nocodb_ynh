@@ -26,6 +26,16 @@ ynh_script_progression --message="Updating NGINX web server configuration..." --
 ynh_change_url_nginx_config
 
 #=================================================
+# MODIFY CONFIGURATION
+#=================================================
+ynh_script_progression --message="Modifying configuration file..." --weight=1
+
+ynh_add_config --template="env" --destination="$install_dir/.env"
+
+chmod 400 "$install_dir/.env"
+chown "$app:$app" "$install_dir/.env"
+
+#=================================================
 # GENERIC FINALISATION
 #=================================================
 # START SYSTEMD SERVICE
