@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # NocoDB pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/nocodb.svg)](https://dash.yunohost.org/appci/app/nocodb) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/nocodb.svg)](https://ci-apps.yunohost.org/ci/apps/nocodb/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)
 
 [![Installer NocoDB avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nocodb)
 
@@ -25,7 +25,7 @@ NocoDB est une plateforme NoCode open source qui transforme n'importe quelle bas
 * Partagez vos vues publiquement et également avec une protection par mot de passe
 * Fournit des API REST et GraphQL avec l'interface graphique Swagger et GraphiQL
 
-**Version incluse :** 0.250.2~ynh1
+**Version incluse :** 0.251.0~ynh1
 
 **Démo :** <https://www.nocodb.com/demos>
 
