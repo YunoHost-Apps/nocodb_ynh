@@ -5,7 +5,7 @@
 
 # YunoHost 上的 NocoDB
 
-[![集成程度](https://dash.yunohost.org/integration/nocodb.svg)](https://dash.yunohost.org/appci/app/nocodb) ![工作状态](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/nocodb.svg)](https://ci-apps.yunohost.org/ci/apps/nocodb/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)
 
 [![使用 YunoHost 安装 NocoDB](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nocodb)
 

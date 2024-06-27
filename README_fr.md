@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # NocoDB pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/nocodb.svg)](https://dash.yunohost.org/appci/app/nocodb) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/nocodb.svg)](https://ci-apps.yunohost.org/ci/apps/nocodb/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)
 
 [![Installer NocoDB avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nocodb)
 

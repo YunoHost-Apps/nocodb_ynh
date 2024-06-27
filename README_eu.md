@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # NocoDB YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/nocodb.svg)](https://dash.yunohost.org/appci/app/nocodb) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/nocodb.svg)](https://ci-apps.yunohost.org/ci/apps/nocodb/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)
 
 [![Instalatu NocoDB YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nocodb)
 
