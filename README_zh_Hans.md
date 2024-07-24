@@ -26,7 +26,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 * Provides REST & GraphQL APIs with Swagger & GraphiQL GUI
 
 
-**分发版本：** 0.251.1~ynh1
+**分发版本：** 0.251.2~ynh1
 
 **演示：** <https://www.nocodb.com/demos>
 
