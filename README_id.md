@@ -26,7 +26,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 * Provides REST & GraphQL APIs with Swagger & GraphiQL GUI
 
 
-**Versi terkirim:** 0.251.2~ynh1
+**Versi terkirim:** 0.251.3~ynh1
 
 **Demo:** <https://www.nocodb.com/demos>
 
@@ -37,7 +37,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 ## Dokumentasi dan sumber daya
 
 - Website aplikasi resmi: <https://www.nocodb.com>
-- Repositori kode aplikasi hulu: <https://github.com/nocodb/nocodb>
+- Depot kode aplikasi hulu: <https://github.com/nocodb/nocodb>
 - Gudang YunoHost: <https://apps.yunohost.org/app/nocodb>
 - Laporkan bug: <https://github.com/YunoHost-Apps/nocodb_ynh/issues>
 
