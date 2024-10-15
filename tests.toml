@@ -4,6 +4,11 @@ test_format = 1.0
 
 [default]
 
+    # -------------------------------
+    # Curl tests to validate that the app works
+    # -------------------------------
+    [default.curl_tests]
+    home.path = "/dashboard/#/signup"
 
     # -------------------------------
     # Commits to test upgrade from
