@@ -26,7 +26,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 * Provides REST & GraphQL APIs with Swagger & GraphiQL GUI
 
 
-**Versión actual:** 0.255.0~ynh1
+**Versión actual:** 0.257.2~ynh1
 
 **Demo:** <https://www.nocodb.com/demos>
 
@@ -43,7 +43,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
