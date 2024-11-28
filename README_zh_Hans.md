@@ -5,7 +5,9 @@
 
 # YunoHost 上的 NocoDB
 
-[![集成程度](https://dash.yunohost.org/integration/nocodb.svg)](https://ci-apps.yunohost.org/ci/apps/nocodb/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/nocodb)](https://ci-apps.yunohost.org/ci/apps/nocodb/)
+![工作状态](https://apps.yunohost.org/badge/state/nocodb)
+![维护状态](https://apps.yunohost.org/badge/maintained/nocodb)
 
 [![使用 YunoHost 安装 NocoDB](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nocodb)
 
@@ -26,7 +28,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 * Provides REST & GraphQL APIs with Swagger & GraphiQL GUI
 
 
-**分发版本：** 0.255.0~ynh1
+**分发版本：** 0.258.3~ynh1
 
 **演示：** <https://www.nocodb.com/demos>
 
