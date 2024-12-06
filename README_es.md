@@ -5,7 +5,9 @@ No se debe editar a mano.
 
 # NocoDB para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/nocodb.svg)](https://ci-apps.yunohost.org/ci/apps/nocodb/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/nocodb.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/nocodb.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/nocodb)](https://ci-apps.yunohost.org/ci/apps/nocodb/)
+![Estado funcional](https://apps.yunohost.org/badge/state/nocodb)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/nocodb)
 
 [![Instalar NocoDB con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nocodb)
 
@@ -26,7 +28,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 * Provides REST & GraphQL APIs with Swagger & GraphiQL GUI
 
 
-**Versión actual:** 0.255.0~ynh1
+**Versión actual:** 0.258.3~ynh1
 
 **Demo:** <https://www.nocodb.com/demos>
 
@@ -43,7 +45,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
