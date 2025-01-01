@@ -7,7 +7,7 @@ name = "NocoDB"
 description.en = "No-code platform that turns any database into a smart spreadsheet"
 description.fr = "Plateform sans code qui transforme toute base de données en un tableur intelligent"
 
-version = "0.258.10~ynh1"
+version = "0.258.11~ynh1"
 
 maintainers = ["tituspijean"]
 
@@ -42,10 +42,10 @@ ram.runtime = "50M"
 
 [resources]
     [resources.sources.main]
-    amd64.url = "https://github.com/nocodb/nocodb/releases/download/0.258.10/Noco-linux-x64"
-    amd64.sha256 = "0065e228e7e141fceffd795fd352790812d6b629746aaf7d55e05f3774db139b"
-    arm64.url = "https://github.com/nocodb/nocodb/releases/download/0.258.10/Noco-linux-arm64"
-    arm64.sha256 = "cf6e0b30466b22ee71c27cab2367ce42200f3e43aadb2494d667dfaa1dc58a56"
+    amd64.url = "https://github.com/nocodb/nocodb/releases/download/0.258.11/Noco-linux-x64"
+    amd64.sha256 = "50866cc3471a25d91d66a17e58be077188b2ab996c3c54f11028c53baa211268"
+    arm64.url = "https://github.com/nocodb/nocodb/releases/download/0.258.11/Noco-linux-arm64"
+    arm64.sha256 = "eb751ba96da625c57ad48c9e2082633f1505b7ea95b062a798e9208474ff7ab7"
     rename = "nocodb"
     extract = false
 
