@@ -27,7 +27,7 @@ NocoDB est une plateforme NoCode open source qui transforme n'importe quelle bas
 * Partagez vos vues publiquement et également avec une protection par mot de passe
 * Fournit des API REST et GraphQL avec l'interface graphique Swagger et GraphiQL
 
-**Version incluse :** 0.260.0~ynh1
+**Version incluse :** 0.260.1~ynh1
 
 **Démo :** <https://www.nocodb.com/demos>
 
