@@ -18,12 +18,12 @@ demo = "https://www.nocodb.com/demos"
 code = "https://github.com/nocodb/nocodb"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 12.0.9"
+helpers_version = "2.1"
 architectures = ["amd64", "arm64"]
 multi_instance = false
 
 ldap = false
-
 sso = false
 
 disk = "50M"
