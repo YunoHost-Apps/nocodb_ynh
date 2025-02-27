@@ -58,10 +58,10 @@ ram.runtime = "50M"
 
     [resources.install_dir]
 
-    [resources.ports]
-
     [resources.permissions]
     main.url = "/"
+
+    [resources.ports]
 
     [resources.apt]
     packages = [
