@@ -43,9 +43,9 @@ ram.runtime = "50M"
 [resources]
     [resources.sources.main]
     amd64.url = "https://github.com/nocodb/nocodb/releases/download/0.262.5/Noco-linux-x64"
-    amd64.sha256 = "e7f01bf5b189d78f006219be8854864708fe196c908d74edf7683d176ba12e25"
+    amd64.sha256 = "dbdced7533e05e895dc696f1a896299cc4474006a1ac0a58a45fe0ca06637983"
     arm64.url = "https://github.com/nocodb/nocodb/releases/download/0.262.5/Noco-linux-arm64"
-    arm64.sha256 = "314b65105e17667e40ca21113d15697dc502806e5d2b335b9f263235ff84a1a4"
+    arm64.sha256 = "24a046757712f247d4950a613e470d69cf02f624d9fd73c48856002d81cb5f14"
     rename = "nocodb"
     extract = false
 
