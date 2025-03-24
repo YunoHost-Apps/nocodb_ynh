@@ -28,7 +28,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 * Provides REST & GraphQL APIs with Swagger & GraphiQL GUI
 
 
-**Paketatutako bertsioa:** 0.262.4~ynh1
+**Paketatutako bertsioa:** 0.262.5~ynh1
 
 **Demoa:** <https://www.nocodb.com/demos>
 
@@ -47,7 +47,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 
 Bidali `pull request`a [`testing` abarrera](https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing).
 
-`testing` abarra probatzeko, ondorengoa egin:
+`testing` abarra probatzeko, honakoa egin:
 
 ```bash
 sudo yunohost app install https://github.com/YunoHost-Apps/nocodb_ynh/tree/testing --debug
