@@ -3,7 +3,7 @@ Este archivo README esta generado automaticamente<https://github.com/YunoHost/ap
 No se debe editar a mano.
 -->
 
-# NocoDB para Yunohost
+# NocoDB para YunoHost
 
 [![Nivel de integración](https://apps.yunohost.org/badge/integration/nocodb)](https://ci-apps.yunohost.org/ci/apps/nocodb/)
 ![Estado funcional](https://apps.yunohost.org/badge/state/nocodb)
@@ -28,7 +28,7 @@ NocoDB is an open source NoCode platform that turns any database into a smart sp
 * Provides REST & GraphQL APIs with Swagger & GraphiQL GUI
 
 
-**Versión actual:** 0.262.4~ynh1
+**Versión actual:** 0.262.5~ynh1
 
 **Demo:** <https://www.nocodb.com/demos>
 
