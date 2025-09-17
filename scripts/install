@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 source /usr/share/yunohost/helpers
 
 jwt_secret=$(ynh_string_random --length=20)
@@ -30,6 +29,7 @@ ynh_script_progression "Adding system configurations related to $app..."
 ynh_config_add_nginx
 
 ynh_config_add_systemd
+
 yunohost service add "$app" --description="Turns any database into a smart-spreadsheet" --log="/var/log/$app/$app.log"
 
 ynh_config_add_logrotate
