@@ -12,7 +12,7 @@ version = "2026.04.1~ynh1"
 maintainers = ["tituspijean"]
 
 [upstream]
-license = "AGPL-3.0-only"
+license = "SUL-1.0"
 website = "https://www.nocodb.com"
 demo = "https://www.nocodb.com/demos"
 code = "https://github.com/nocodb/nocodb"
