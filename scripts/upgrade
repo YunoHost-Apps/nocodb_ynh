@@ -2,6 +2,10 @@
 
 source /usr/share/yunohost/helpers
 
+if ynh_app_upgrading_from_version_before 2026.06.01~ynh1; then
+    ynh_die "The package cannot handle upgrades from before v2026.06.01. Read pre-upgrade instructions."
+fi
+
 #=================================================
 # STOP SYSTEMD SERVICE
 #=================================================

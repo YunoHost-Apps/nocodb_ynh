@@ -65,9 +65,9 @@ ram.runtime = "50M"
 
     [resources.apt]
     packages = [
-        "mariadb-server",
+        "postgresql",
         "redis-server"
     ]
 
     [resources.database]
-    type = "mysql"
+    type = "postgresql"
