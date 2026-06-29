@@ -23,6 +23,9 @@ chmod +x "$install_dir/nocodb"
 #=================================================
 ynh_script_progression "Upgrade configuration file..."
 
+redis_db=$(ynh_redis_get_free_db)
+ynh_app_setting_set --key=redis_db --value="$redis_db"
+
 ynh_config_add --template="env" --destination="$install_dir/.env"
 
 #=================================================
