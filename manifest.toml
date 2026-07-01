@@ -7,7 +7,7 @@ name = "NocoDB"
 description.en = "No-code platform that turns any database into a smart spreadsheet"
 description.fr = "Plateform sans code qui transforme toute base de données en un tableur intelligent"
 
-version = "0.301.3~ynh1"
+version = "2026.06.1~ynh1"
 
 maintainers = ["tituspijean"]
 
@@ -18,7 +18,7 @@ demo = "https://www.nocodb.com/demos"
 code = "https://github.com/nocodb/nocodb"
 
 [integration]
-yunohost = ">= 12.1.38"
+yunohost = ">= 12.1.39"
 helpers_version = "2.1"
 architectures = ["amd64", "arm64"]
 multi_instance = false
@@ -42,10 +42,10 @@ ram.runtime = "50M"
 
 [resources]
     [resources.sources.main]
-    amd64.url = "https://github.com/nocodb/nocodb/releases/download/0.301.3/Noco-linux-x64"
-    amd64.sha256 = "91fb5b0fac4ab50b563e2d2e72b86584fa64baf29988af68a69ac9f4e201e084"
-    arm64.url = "https://github.com/nocodb/nocodb/releases/download/0.301.3/Noco-linux-arm64"
-    arm64.sha256 = "b4ed308edbaeb48897a1aed609823af29f0b4d4b8a35faf5064f4d6a1d71db16"
+    amd64.url = "https://github.com/nocodb/nocodb/releases/download/2026.06.1/Noco-linux-x64"
+    amd64.sha256 = "51e481c9bf84fd71d23740e321caa6d327fa54da3a570a02a733bfff4c1aa3c5"
+    arm64.url = "https://github.com/nocodb/nocodb/releases/download/2026.06.1/Noco-linux-arm64"
+    arm64.sha256 = "0bc6c238efbf1c0b0c55af1b5dcbbb1cc749ab1ecbff95f69bc46c18cd476090"
     rename = "nocodb"
     extract = false
 
@@ -65,9 +65,9 @@ ram.runtime = "50M"
 
     [resources.apt]
     packages = [
-        "mariadb-server",
+        "postgresql",
         "redis-server"
     ]
 
     [resources.database]
-    type = "mysql"
+    type = "postgresql"
