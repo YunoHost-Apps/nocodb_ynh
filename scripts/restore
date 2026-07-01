@@ -14,9 +14,9 @@ chmod +x "$install_dir/nocodb"
 #=================================================
 # RESTORE THE MYSQL DATABASE
 #=================================================
-ynh_script_progression "Restoring the MySQL database..."
+ynh_script_progression "Restoring the PSQL database..."
 
-ynh_mysql_db_shell < ./db.sql
+ynh_psql_db_shell < ./db.sql
 
 #=================================================
 # RESTORE SYSTEM CONFIGURATIONS
@@ -39,7 +39,7 @@ ynh_restore "/var/log/$app/"
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service="$app" --action="start" --log_path="systemd" --wait_until="application successfully started"
+ynh_systemctl --service="$app" --action="start" --log_path="systemd" --wait_until="App started successfully."
 
 ynh_systemctl --service=nginx --action=reload
 
