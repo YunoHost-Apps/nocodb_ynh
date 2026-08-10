@@ -49,9 +49,8 @@ ram.runtime = "50M"
     rename = "nocodb"
     extract = false
 
-    autoupdate.strategy = "latest_github_release"
-    autoupdate.asset.amd64 = "Noco-linux-x64"
-    autoupdate.asset.arm64 = "Noco-linux-arm64"
+    # Upstream does not release prebuilt binairies anymore. Auto-updater is temporarily disabled while we integrate the build in the install and upgrade scripts.
+    #autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
     allow_email = true
