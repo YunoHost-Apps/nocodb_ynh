@@ -11,8 +11,17 @@ ynh_app_setting_set --key=jwt_secret --value=$jwt_secret
 ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
+mkdir -p $install_dir/data
 
-chmod +x "$install_dir/nocodb"
+#=================================================
+# DOWNLOAD, CHECK AND UNPACK SOURCE
+#=================================================
+ynh_script_progression "Installing NodeJS dependencies..."
+
+npm install corepack
+export NODE_ENV="production"
+export NC_TOOL_DIR="$install_dir/data"
+ynh_hide_warnings ynh_exec_as_app node
 
 #=================================================
 # ADD A CONFIGURATION
