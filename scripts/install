@@ -18,10 +18,11 @@ mkdir -p $install_dir/data
 #=================================================
 ynh_script_progression "Installing NodeJS dependencies..."
 
-npm install corepack
 export NODE_ENV="production"
 export NC_TOOL_DIR="$install_dir/data"
-ynh_hide_warnings ynh_exec_as_app node
+
+ynh_hide_warnings corepack enable && corepack prepare pnpm@latest --activate
+ynh_hide_warnings ynh_exec_as_app pnpm bootstrap
 
 #=================================================
 # ADD A CONFIGURATION
