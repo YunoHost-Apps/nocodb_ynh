@@ -42,15 +42,9 @@ ram.runtime = "50M"
 
 [resources]
     [resources.sources.main]
-    amd64.url = "https://github.com/nocodb/nocodb/releases/download/2026.06.1/Noco-linux-x64"
-    amd64.sha256 = "51e481c9bf84fd71d23740e321caa6d327fa54da3a570a02a733bfff4c1aa3c5"
-    arm64.url = "https://github.com/nocodb/nocodb/releases/download/2026.06.1/Noco-linux-arm64"
-    arm64.sha256 = "0bc6c238efbf1c0b0c55af1b5dcbbb1cc749ab1ecbff95f69bc46c18cd476090"
-    rename = "nocodb"
-    extract = false
-
-    # Upstream does not release prebuilt binairies anymore. Auto-updater is temporarily disabled while we integrate the build in the install and upgrade scripts.
-    #autoupdate.strategy = "latest_github_release"
+    url = "https://github.com/nocodb/nocodb/archive/refs/tags/2026.08.0.tar.gz"
+    sha256 = "ffe59b5ae866c85c1446753ec5031eb3bbbb85ed28661b4c70c666794dfdec60"
+    autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
     allow_email = true
@@ -67,6 +61,9 @@ ram.runtime = "50M"
         "postgresql",
         "redis-server"
     ]
+
+    [resources.nodejs]
+    version = "24.14.0"
 
     [resources.database]
     type = "postgresql"
